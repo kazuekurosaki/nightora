@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIGHTORA - Premium Streaming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+
+    <!-- Age Verification -->
+    <div id="age-modal" class="fixed inset-0 z-[100] bg-slate-950 flex items-center justify-center p-6">
+        <div class="max-w-md text-center">
+            <h1 class="text-5xl font-black text-rose-600 mb-4 italic">18+</h1>
+            <h2 class="text-2xl font-bold mb-4">Adult Content Warning</h2>
+            <p class="text-slate-400 mb-8">Situs ini mengandung konten dewasa. Anda harus berusia minimal 18 tahun untuk melanjutkan.</p>
+            <div class="flex gap-4 justify-center">
+                <button onclick="verifyAge()" class="bg-rose-600 hover:bg-rose-700 text-white px-10 py-3 rounded-full font-bold transition">MASUK</button>
+                <a href="https://google.com" class="bg-slate-800 px-10 py-3 rounded-full font-bold">KELUAR</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Layout -->
+    <div id="app" class="hidden">
+        <div id="header-placeholder"></div>
+        
+        <main class="container mx-auto px-4 pt-24 pb-12">
+            <div id="dynamic-content">
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <aside class="lg:w-1/4">
+                        <div id="genre-placeholder"></div>
+                    </aside>
+                    <section class="lg:w-3/4">
+                        <div id="list-placeholder"></div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer-placeholder"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
