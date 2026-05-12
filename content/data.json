@@ -14,6 +14,6 @@
         "studio": "Tokyo Nights",
         "country": "Japan",
         "quality": "HD",
-        "nsfw": true
+        "nsfw": false
     }
 ]
