@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+body { font-family: 'Inter', sans-serif; }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0f172a; }
+::-webkit-scrollbar-thumb { background: #e11d48; border-radius: 10px; }
+
+/* Hover Effects */
+.video-card:hover .video-preview { opacity: 1; }
+.video-card:hover .thumbnail-img { opacity: 0; }
+
+.nsfw-blur { backdrop-filter: blur(20px); }
+
+iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 1.5rem;
+}
